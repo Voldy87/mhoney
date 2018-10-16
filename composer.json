@@ -47,7 +47,9 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover"
-        ]
+        ],
+        "deploy-stage": "git checkout heroku master; git pull heroku develop; git commit -m 'deploy-stage'; git push heroku master",
+        "deploy-production": ""
     },
     "config": {
         "preferred-install": "dist",

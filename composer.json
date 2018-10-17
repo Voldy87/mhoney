@@ -49,7 +49,7 @@
             "@php artisan package:discover"
         ],
         "post-install-cmd": [
-            "chmod -R 777 public/"
+            "chmod -R 775 public/"
         ],
         "deploy-stage": "git push heroku develop:master",
         "deploy-production": "git push origin master"

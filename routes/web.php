@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('.hello', function () {
+    return 'world';
+});
+
+Route::get('world', function () {
+    return 'hello';
+});
+
 Route::get('.well-known/acme-challenge/5XbncyfGkOAZizeedP7FW59qXddARJOqKKKT9NnwFnY', function () {
     return '5XbncyfGkOAZizeedP7FW59qXddARJOqKKKT9NnwFnY.afiEOhroSFWLh0vH7GO6GHJt3sWscU1IxaDZ1JLL6kU';
 });

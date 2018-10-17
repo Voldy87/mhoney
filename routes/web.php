@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('well-known/acme-challenge/5XbncyfGkOAZizeedP7FW59qXddARJOqKKKT9NnwFnY', function () {
+    return '5XbncyfGkOAZizeedP7FW59qXddARJOqKKKT9NnwFnY.afiEOhroSFWLh0vH7GO6GHJt3sWscU1IxaDZ1JLL6kU';
+});
